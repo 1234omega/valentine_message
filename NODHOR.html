@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Happy 15,76,800 Minutes Together</title>
+    <style>
+        body {
+            background-image: url('IMG-20211013-WA0052.jpg'); 
+            background-size: 4cm 4cm; 
+            background-repeat: repeat; 
+            background-attachment: fixed;
+            background-position: center;
+            color: #00ffd0; 
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace; 
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 2s; 
+            margin: 0; 
+            padding: 20px; 
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .rose {
+            font-size: 120px; 
+            display: none;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        p {
+            margin: 20px 0;
+            font-size: 28px; 
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 15px;
+            border-radius: 10px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+            transition: transform 0.3s; 
+            max-width: 600px; 
+            line-height: 1.5; 
+        }
+
+        p:hover {
+            transform: scale(1.05); 
+        }
+
+        a {
+            color: #ff0077; 
+            text-decoration: none;
+            font-size: 24px; 
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border: 2px solid #FF4500; 
+            border-radius: 5px; 
+            transition: background-color 0.3s, color 0.3s; 
+            background-color: rgba(255, 255, 255, 0.2); 
+        }
+
+        a:hover {
+            background-color: #FF4500; 
+            color: white; 
+        }
+
+        .heart {
+            font-size: 50px; 
+            color: red; 
+            animation: heartbeat 1s infinite; 
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 30px;
+            border-radius: 15px; 
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="#" onclick="showRose()">Hi Miss Rimpa Banerjee </a>
+    <div id="rose" class="rose">🌹</div>
+    <p> Bubu Will You Be My Valentine Today Tomorrow and the Rest Of The Life? <br> Happy Propose Day Nodhor<3 </p>
+    <div class="heart">❤️</div>
+</div>
+
+<script>
+    function showRose() {
+        document.getElementById('rose').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
